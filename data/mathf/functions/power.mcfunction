@@ -1,12 +1,12 @@
 
 #> Power
 #  x = y^z
-#  y = inp0 mIO
-#  z = inp1 mIO
-#  x = out0 mIO
+#  y = inp0 mathf.io
+#  z = inp1 mathf.io
+#  x = out0 mathf.io
 
-scoreboard players set powerCount mData 1
-scoreboard players operation temp mData = inp0 mIO
+scoreboard players set powerCount mathf.data 1
+scoreboard players operation temp mathf.data = inp0 mathf.io
 
 function mathf:private/power-loop
 #function mathf:private/clean-scoreboards

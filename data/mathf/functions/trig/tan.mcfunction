@@ -1,22 +1,22 @@
 
 #> Tangent
-#  Input (degrees at Scale 100) = inp0 mIO
-#  Output (number at Scale 1000) = out0 mIO
+#  Input (degrees at Scale 100) = inp0 mathf.io
+#  Output (number at Scale 1000) = out0 mathf.io
 
 function mathf:trig/sin
-scoreboard players operation sine mData = out0 mIO
+scoreboard players operation sine mathf.data = out0 mathf.io
 
-scoreboard players operation sineSquared mData = sine mData
-scoreboard players operation sineSquared mData *= sine mData
-scoreboard players operation sineSquared mData /= #100 const
+scoreboard players operation sineSquared mathf.data = sine mathf.data
+scoreboard players operation sineSquared mathf.data *= sine mathf.data
+scoreboard players operation sineSquared mathf.data /= #100 mathf.const
 
-scoreboard players set denominator mData 10000
-scoreboard players operation denominator mData -= sineSquared mData
-scoreboard players operation inp0 mIO = denominator mData
+scoreboard players set denominator mathf.data 10000
+scoreboard players operation denominator mathf.data -= sineSquared mathf.data
+scoreboard players operation inp0 mathf.io = denominator mathf.data
 function mathf:sqrt
-scoreboard players operation denominator mData = out0 mIO
-scoreboard players operation denominator mData *= #10 const
+scoreboard players operation denominator mathf.data = out0 mathf.io
+scoreboard players operation denominator mathf.data *= #10 mathf.const
 
-scoreboard players operation out0 mIO = sine mData
-scoreboard players operation out0 mIO *= #1000 const
-scoreboard players operation out0 mIO /= denominator mData
+scoreboard players operation out0 mathf.io = sine mathf.data
+scoreboard players operation out0 mathf.io *= #1000 mathf.const
+scoreboard players operation out0 mathf.io /= denominator mathf.data

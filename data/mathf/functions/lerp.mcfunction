@@ -1,22 +1,22 @@
 
 #> Lerp (Linearly Interpolate)
 #  Input:
-#  Start = inp0 mIO
-#  End = inp1 mIO
-#  Interpolant (Clamped from 0-100) = inp2 mIO
+#  Start = inp0 mathf.io
+#  End = inp1 mathf.io
+#  Interpolant (Clamped from 0-100) = inp2 mathf.io
 #  
 #  Output:
-#  Value = out0 mIO
+#  Value = out0 mathf.io
 
-scoreboard players operation start mData = inp0 mIO
-scoreboard players operation end mData = inp1 mIO
+scoreboard players operation start mathf.data = inp0 mathf.io
+scoreboard players operation end mathf.data = inp1 mathf.io
 
-scoreboard players operation range mData = end mData
-scoreboard players operation range mData -= start mData
+scoreboard players operation range mathf.data = end mathf.data
+scoreboard players operation range mathf.data -= start mathf.data
 
-scoreboard players operation interpolant mData = inp2 mIO
-scoreboard players operation interpolant mData *= range mData
-scoreboard players operation interpolant mData /= #100 const
-scoreboard players operation interpolant mData += start mData
+scoreboard players operation interpolant mathf.data = inp2 mathf.io
+scoreboard players operation interpolant mathf.data *= range mathf.data
+scoreboard players operation interpolant mathf.data /= #100 mathf.const
+scoreboard players operation interpolant mathf.data += start mathf.data
 
-scoreboard players operation out0 mIO = interpolant mData
+scoreboard players operation out0 mathf.io = interpolant mathf.data

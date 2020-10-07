@@ -1,18 +1,18 @@
 
 #> Square Root
-#  Number to sqrt should be in inp0 mIO
-#  Result will be in out0 mIO
+#  Number to sqrt should be in inp0 mathf.io
+#  Result will be in out0 mathf.io
 #  Credit to https://github.com/ImCoolYeah105/Datapack-Utilities/issues/5#issuecomment-433670044
 
 # If negative number is input, just sqrt the positive version of that number
-execute if score inp0 mIO matches ..0 run scoreboard players operation inp0 mIO *= #-1 const
+execute if score inp0 mathf.io matches ..0 run scoreboard players operation inp0 mathf.io *= #-1 mathf.const
 
-scoreboard players set sqrtCount mData 0
-scoreboard players set sqrtValue.n-1 mData 0
-scoreboard players set sqrtValue.n-2 mData 0
-scoreboard players operation out0 mIO = inp0 mIO
-scoreboard players operation out0 mIO /= #2 const
+scoreboard players set sqrtCount mathf.data 0
+scoreboard players set sqrtValue.n-1 mathf.data 0
+scoreboard players set sqrtValue.n-2 mathf.data 0
+scoreboard players operation out0 mathf.io = inp0 mathf.io
+scoreboard players operation out0 mathf.io /= #2 mathf.const
 
 function mathf:private/sqrt-loop
 
-execute if score debugInfo mConfig matches 1 run tellraw @a ["Sqrt of ",{"score":{"name":"inp0","objective":"mIO"}}," = ",{"score":{"name":"out0","objective":"mIO"}}," after ",{"score":{"name":"sqrtCount","objective":"mData"}}," iterations."]
+execute if score debugInfo mathf.config matches 1 run tellraw @a ["Sqrt of ",{"score":{"name":"inp0","objective":"mathf.io"}}," = ",{"score":{"name":"out0","objective":"mathf.io"}}," after ",{"score":{"name":"sqrtCount","objective":"mathf.data"}}," iterations."]
