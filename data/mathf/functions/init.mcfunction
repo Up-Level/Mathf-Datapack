@@ -1,3 +1,8 @@
+#> mathf:init
+# 
+# Initialise scoreboards for the mathf datapack.
+# @internal
+
 scoreboard objectives remove mathf.const
 scoreboard objectives add mathf.const dummy
 scoreboard players set #-1 mathf.const -1
