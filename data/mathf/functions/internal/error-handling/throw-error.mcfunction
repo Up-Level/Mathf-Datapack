@@ -7,7 +7,7 @@
 #       string
 #           The error to display.
 # 
-# @within mathf:internal/error-handling/**
+# @within mathf:internal/error-handling/error-tick
 
 tellraw @a [{"text":"Error - ","color":"red"},{"nbt":"error","storage":"mathf:throw","color":"red"}]
 data remove storage mathf:throw error

@@ -7,7 +7,7 @@
 #       string
 #           The warning to display.
 #  
-# @within mathf:internal/error-handling/**
+# @within mathf:internal/error-handling/error-tick
 
 tellraw @a [{"text":"Warning - ","color":"gold"},{"nbt":"warning","storage":"mathf:throw","color":"gold"}]
 data remove storage mathf:throw warning

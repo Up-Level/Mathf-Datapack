@@ -15,4 +15,4 @@
 scoreboard players set powerCount mathf.data 1
 scoreboard players operation temp mathf.data = i0 mathf.io
 
-function mathf:private/power-loop
+function mathf:private/exp-loop
