@@ -35,8 +35,12 @@ scoreboard objectives add mathf.data dummy
 scoreboard objectives remove mathf.io
 scoreboard objectives add mathf.io dummy
 
-scoreboard objectives remove mathf.config
-scoreboard objectives add mathf.config dummy
+scoreboard objectives remove mathf.version
+scoreboard objectives add mathf.version dummy
+scoreboard players set major mathf.version 0
+scoreboard players set minor mathf.version 1
+scoreboard players set patch mathf.version 0
+execute unless score displayVersionOnInit mathf.config matches 0 run tellraw @a [{"text":"Mathf Datapack initiated on Version ","color":"gold"},{"score":{"name":"major","objective":"mathf.version"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"minor","objective":"mathf.version"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"patch","objective":"mathf.version"},"color":"gold"}]
 
-scoreboard players set debugInfo mathf.config 0
-scoreboard players set showErrors mathf.config 1
+scoreboard objectives add mathf.config dummy
+execute unless score setDefaultConfig mathf.config matches 0 run function mathf:internal/defualt-config
