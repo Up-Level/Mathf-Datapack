@@ -39,3 +39,4 @@ scoreboard objectives remove mathf.config
 scoreboard objectives add mathf.config dummy
 
 scoreboard players set debugInfo mathf.config 0
+scoreboard players set showErrors mathf.config 1

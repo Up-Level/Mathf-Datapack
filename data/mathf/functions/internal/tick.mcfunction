@@ -4,4 +4,4 @@
 # 
 # @internal
 
-function mathf:internal/error-handling/error-tick
+execute if score showErrors mathf.config matches 1 run function mathf:internal/error-handling/error-tick

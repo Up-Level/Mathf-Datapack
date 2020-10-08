@@ -1,12 +1,17 @@
-
-#> Sine
-#  Input (degrees at Scale 100) = i0 mathf.io
-#  Output (number from 0-1 at Scale 1000) = o0 mathf.io
+#> mathf:trig/sin
+# 
+# Returns the sine of the angle input (in degrees).
+# 
+# @input score i0 mathf.io Angle in degrees (Scale 100).
+# @output score o0 mathf.io Number between 0 and 1 (Scale 1000).
+# 
+# @public
+# @context any
 
 scoreboard players operation i0 mathf.io %= #36000 mathf.const
-execute if score i0 mathf.io matches 9001..18000 run function mathf:trig/private/i-90-180
-execute if score i0 mathf.io matches 18001..27000 run function mathf:trig/private/i-180-270
-execute if score i0 mathf.io matches 27001..36000 run function mathf:trig/private/i-270-360
+execute if score i0 mathf.io matches 9001..18000 run function mathf:trig/private/inp-90-180
+execute if score i0 mathf.io matches 18001..27000 run function mathf:trig/private/inp-180-270
+execute if score i0 mathf.io matches 27001..36000 run function mathf:trig/private/inp-270-360
 
 
 function mathf:deg-to-rad
