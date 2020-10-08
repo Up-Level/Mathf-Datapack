@@ -1,4 +1,4 @@
-#> mathf:internal/defualt-config
+#> mathf:internal/default-config
 # 
 # Sets the defualt config settings.
 # 

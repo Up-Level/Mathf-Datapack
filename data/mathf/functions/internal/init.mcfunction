@@ -43,4 +43,4 @@ scoreboard players set patch mathf.version 0
 execute unless score displayVersionOnInit mathf.config matches 0 run tellraw @a [{"text":"Mathf Datapack initiated on Version ","color":"gold"},{"score":{"name":"major","objective":"mathf.version"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"minor","objective":"mathf.version"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"patch","objective":"mathf.version"},"color":"gold"}]
 
 scoreboard objectives add mathf.config dummy
-execute unless score setDefaultConfig mathf.config matches 0 run function mathf:internal/defualt-config
+execute unless score setDefaultConfig mathf.config matches 0 run function mathf:internal/default-config
