@@ -1,11 +1,21 @@
+#> mathf:sqrt
+# 
+# Square Roots i0.
+# Credit to https://github.com/ImCoolYeah105/Datapack-Utilities/issues/5#issuecomment-433670044
+# 
+# @input
+#   score i0 mathf.io
+#       The number to be rooted.
+# 
+# @output
+#   score o0 mathf.io
+#       The result.
+# 
+# @public
+# @context any
 
-#> Square Root
-#  Number to sqrt should be in i0 mathf.io
-#  Result will be in o0 mathf.io
-#  Credit to https://github.com/ImCoolYeah105/Datapack-Utilities/issues/5#issuecomment-433670044
-
-# If negative number is iut, just sqrt the positive version of that number
-execute if score i0 mathf.io matches ..0 run scoreboard players operation i0 mathf.io *= #-1 mathf.const
+# If negative number is input, throw an error
+execute if score i0 mathf.io matches ..-1 run data modify storage mathf:throw error set value "Cannot Square Root a negative number. (mathf:sqrt)"
 
 scoreboard players set sqrtCount mathf.data 0
 scoreboard players set sqrtValue.n-1 mathf.data 0

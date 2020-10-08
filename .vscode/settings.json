@@ -1,0 +1,6 @@
+{
+    "datapack.snippets": {
+        "throwError": "data modify storage mathf:throw error set value \"${1:error_message}\"",
+        "throwWarning": "data modify storage mathf:throw warning set value \"${1:warning_message}\""
+    }
+}

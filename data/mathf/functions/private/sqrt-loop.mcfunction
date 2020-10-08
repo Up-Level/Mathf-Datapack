@@ -9,6 +9,7 @@ scoreboard players operation sqrtValue mathf.data /= #2 mathf.const
 scoreboard players operation o0 mathf.io = sqrtValue mathf.data
 
 # Detect if the function can stop looping
+execute store success score sqrtFinished mathf.data if score i0 mathf.io matches ..-1
 execute store success score sqrtFinished mathf.data if score sqrtValue.n-1 mathf.data = sqrtValue mathf.data
 execute store success score sqrtFinished mathf.data if score sqrtValue.n-2 mathf.data = sqrtValue mathf.data
 execute if score sqrtCount mathf.data matches 35.. run scoreboard players set sqrtFinished mathf.data 1

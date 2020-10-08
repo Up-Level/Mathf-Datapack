@@ -1,17 +1,20 @@
-
-#> Distance between 2 points
-#  Input is as follows:
-#  Point 1 x = i0 mathf.io
-#  Point 1 y = i1 mathf.io
-#  Point 1 z = i2 mathf.io
-#  Point 2 x = i3 mathf.io
-#  Point 2 y = i4 mathf.io
-#  Point 2 z = i5 mathf.io
-#  
-#  Output is as follows:
-#  Distance = o0 mathf.io
-#  
-#  Credit to https://gaming.stackexchange.com/a/348985
+#> mathf:dist-between-points
+# 
+# Gets the distance in whole blocks between 2 coordinates.
+# 
+# @input
+#   score i0 mathf.io Point 1 X coordinate.
+#   score i1 mathf.io Point 1 Y coordinate.
+#   score i2 mathf.io Point 1 Z coordinate.
+#   score i3 mathf.io Point 2 X coordinate.
+#   score i4 mathf.io Point 2 Y coordinate.
+#   score i5 mathf.io Point 2 Z coordinate.
+# 
+# @output
+#   score o0 mathf.io The distance as an int.
+# 
+# @public
+# @context any
 
 # Get differences on each axis
 scoreboard players operation xDiff mathf.data = i0 mathf.io

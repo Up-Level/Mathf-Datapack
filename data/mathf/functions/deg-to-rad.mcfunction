@@ -1,7 +1,12 @@
-
-#> Degrees to Radians
-#  Input = (Scale 100) i0 mathf.io
-#  Output (Scale 1000) = o0 mathf.io
+#> mathf:deg-to-rad
+# 
+# Converts from degrees (at scale 100) to radians (at scale 1000)
+# 
+# @input score i0 mathf.io Input in degrees.
+# @output score o0 mathf.io Output in radians.
+# 
+# @public
+# @context any
 
 scoreboard players operation temp mathf.data = i0 mathf.io
 

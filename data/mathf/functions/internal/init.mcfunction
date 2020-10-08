@@ -1,4 +1,4 @@
-#> mathf:init
+#> mathf:internal/init
 # 
 # Initialise scoreboards for the mathf datapack.
 # @internal

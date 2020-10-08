@@ -1,5 +1,5 @@
 {
 	"values":[
-		"mathf:init"
+		"mathf:internal/init"
 	]
 }
