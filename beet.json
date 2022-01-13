@@ -1,0 +1,6 @@
+{
+    "output": "build",
+    "data_pack": {
+        "load": ["src"]
+    }
+}
