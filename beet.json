@@ -1,6 +1,8 @@
 {
     "output": "build",
     "data_pack": {
-        "load": ["src"]
+        "load": ["src"],
+        "pack_format": 8,
+        "description": "Useful Mathematical Functions for Datapacks by UpLevel."
     }
 }
