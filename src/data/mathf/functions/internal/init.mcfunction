@@ -18,7 +18,7 @@ scoreboard objectives add mathf.io dummy
 scoreboard objectives remove mathf.version
 scoreboard objectives add mathf.version dummy
 scoreboard players set major mathf.version 0
-scoreboard players set minor mathf.version 1
+scoreboard players set minor mathf.version 2
 scoreboard players set patch mathf.version 0
 execute unless score displayVersionOnInit mathf.config matches 0 run tellraw @a [{"text":"Mathf Datapack initiated on Version ","color":"gold"},{"score":{"name":"major","objective":"mathf.version"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"minor","objective":"mathf.version"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"patch","objective":"mathf.version"},"color":"gold"}]
 
