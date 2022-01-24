@@ -1,7 +1,7 @@
 #> mathf:internal/init
 # 
 # Initialise scoreboards for the mathf datapack.
-# @internal
+# @handles #minecraft:load
 
 function mathf:internal/const
 
