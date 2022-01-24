@@ -1,15 +1,18 @@
-
-#> Lerp (Linearly Interpolate)
-#  Input is as follows:
-#  Interpolant (Scale 100) = i0 mathf.io
-#  Input Vector x (Scale 100) = i1 mathf.io
-#  Input Vector y (Scale 100) = i2 mathf.io
-#  Input Vector z (Scale 100) = i3 mathf.io
+#> mathf:vector/lerp
+# Linearly interpolates a vector.
+# @input
+#   score i0 mathf.io   Interpolant (Scale 100)
+#   score i1 mathf.io   Input Vector x (Scale 100)
+#   score i2 mathf.io   Input Vector y (Scale 100)
+#   score i3 mathf.io   Input Vector z (Scale 100)
 #  
-#  Output is as follows:
-#  Vector x (Scale 100) = o0 mathf.io
-#  Vector y (Scale 100) = o1 mathf.io
-#  Vector z (Scale 100) = o2 mathf.io
+# @output
+#   score o0 mathf.io   Vector x (Scale 100)
+#   score o1 mathf.io   Vector y (Scale 100)
+#   score o2 mathf.io   Vector z (Scale 100)
+# 
+# @public
+# @context any
 
 scoreboard players operation vectorInterpolant mathf.data = i0 mathf.io
 

@@ -1,10 +1,11 @@
-#> mathf:internal/init
-# 
-# Initialise scoreboards for the mathf datapack.
-# @internal
+#> mathf:internal/const
+#
+# Constant values used in calculations.
+# @within mathf:internal/init
 
 scoreboard objectives remove mathf.const
 scoreboard objectives add mathf.const dummy
+
 scoreboard players set #-1 mathf.const -1
 scoreboard players set #2 mathf.const 2
 scoreboard players set #3 mathf.const 3
@@ -29,18 +30,26 @@ scoreboard objectives remove mathf.const_2dp
 scoreboard objectives add mathf.const_2dp dummy
 scoreboard players set #pi mathf.const_2dp 314
 
-scoreboard objectives remove mathf.data
-scoreboard objectives add mathf.data dummy
+#declare objective mathf.const
 
-scoreboard objectives remove mathf.io
-scoreboard objectives add mathf.io dummy
+#declare score_holder #-1
+#declare score_holder #2
+#declare score_holder #3
+#declare score_holder #5
+#declare score_holder #6
+#declare score_holder #10
+#declare score_holder #100
+#declare score_holder #120
+#declare score_holder #180
+#declare score_holder #1000
+#declare score_holder #1800
+#declare score_holder #5040
+#declare score_holder #9000
+#declare score_holder #10000
+#declare score_holder #18000
+#declare score_holder #36000
+#declare score_holder #60000
+#declare score_holder #362880
+#declare score_holder #1200000
 
-scoreboard objectives remove mathf.version
-scoreboard objectives add mathf.version dummy
-scoreboard players set major mathf.version 0
-scoreboard players set minor mathf.version 1
-scoreboard players set patch mathf.version 0
-execute unless score displayVersionOnInit mathf.config matches 0 run tellraw @a [{"text":"Mathf Datapack initiated on Version ","color":"gold"},{"score":{"name":"major","objective":"mathf.version"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"minor","objective":"mathf.version"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"patch","objective":"mathf.version"},"color":"gold"}]
-
-scoreboard objectives add mathf.config dummy
-execute unless score setDefaultConfig mathf.config matches 0 run function mathf:internal/default-config
+#declare score_holder #pi

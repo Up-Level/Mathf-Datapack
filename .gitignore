@@ -1,1 +1,3 @@
-launch.bat
+.vscode
+__pycache__
+.beet_cache
