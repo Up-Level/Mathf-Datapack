@@ -1,4 +1,4 @@
 [data_pack]
 load = ["src"]
-pack_format = 8
+pack_format = 15
 description = "Useful Mathematical Functions for Datapacks by UpLevel."
