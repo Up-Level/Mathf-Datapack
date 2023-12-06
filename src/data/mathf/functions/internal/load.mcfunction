@@ -1,4 +1,4 @@
-#> mathf:internal/init
+#> mathf:internal/load
 # 
 # Initialise scoreboards for the mathf datapack.
 # @handles #minecraft:load
@@ -26,7 +26,7 @@ scoreboard objectives remove mathf.version
 scoreboard objectives add mathf.version dummy
 scoreboard players set major mathf.version 0
 scoreboard players set minor mathf.version 3
-scoreboard players set patch mathf.version 0
+scoreboard players set patch mathf.version 1
 execute unless score displayVersionOnLoad mathf.config matches 0 run tellraw @a [{"text":"Mathf Datapack loaded on Version ","color":"gold"},{"score":{"name":"major","objective":"mathf.version"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"minor","objective":"mathf.version"},"color":"gold"},{"text":".","color":"gold"},{"score":{"name":"patch","objective":"mathf.version"},"color":"gold"}]
 
 scoreboard objectives add mathf.config dummy

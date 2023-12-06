@@ -4,7 +4,7 @@
 # @input
 #   score i0 mathf.io    The start point.
 #   score i1 mathf.io    The end point.
-#   score i2 mathf.io    The interpolant.
+#   score i2 mathf.io    The interpolant (0-100).
 # 
 # @output
 #   score o0 mathf.io    The result.

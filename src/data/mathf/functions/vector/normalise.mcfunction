@@ -1,14 +1,14 @@
 #> mathf:vector/normalise
 # Normalises a vector.
 # @input
-#   Vector x (Scale 100) = i0 mathf.io
-#   Vector y (Scale 100) = i1 mathf.io
-#   Vector z (Scale 100) = i2 mathf.io
+#   score i0 mathf.io    Vector x
+#   score i0 mathf.io    Vector y
+#   score i0 mathf.io    Vector z
 #  
 # @output
-#   Normalised Vector x (Scale 100) = o0 mathf.io
-#   Normalised Vector y (Scale 100) = o1 mathf.io
-#   Normalised Vector z (Scale 100) = o2 mathf.io
+#   score o0 mathf.io   Normalised Vector x (Scale 100)
+#   score o1 mathf.io   Normalised Vector y (Scale 100)
+#   score o1 mathf.io   Normalised Vector z (Scale 100)
 # 
 # @public
 # @context any

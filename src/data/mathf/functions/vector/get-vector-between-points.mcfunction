@@ -1,6 +1,6 @@
 #> mathf:vector/get-vector-between-points
 # 
-# Gets the vector (scale 100) between 2 coordinates.
+# Gets the vector between 2 coordinates.
 # 
 # @input
 #   score i0 mathf.io    Initial X coordinate.
@@ -11,9 +11,9 @@
 #   score i5 mathf.io    Terminal Z coordinate.
 # 
 # @output
-#   score o0 mathf.io    Vector X (Scale 100).
-#   score o1 mathf.io    Vector Y (Scale 100).
-#   score o2 mathf.io    Vector Z (Scale 100).
+#   score o0 mathf.io    Vector X.
+#   score o1 mathf.io    Vector Y.
+#   score o2 mathf.io    Vector Z.
 # 
 # @public
 # @context any
